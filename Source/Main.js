@@ -1,6 +1,19 @@
-import CameraPosition from "./Camera/CameraPosition.js";
-import Gravity from "./Scene/Gravity.js";
-import SceneViewport from "./Scene/SceneViewport.js";
-import Enum from "./Core/Enum.js";
-import CoreMath from "./Core/Math.js";
-import Position from "./Core/Position.js";
+import Engine from "./Engine/Engine.js";
+import Entity from "./Engine/Entity.js";
+import Material from "./Engine/Material.js";
+import Mesh from "./Engine/Mesh.js";
+import Light from "./Engine/Light.js";
+
+export function createEngine(options) {
+  return new Engine(options);
+}
+
+export {
+  Engine,
+  Entity,
+  Material,
+  Mesh,
+  Light,
+};
+
+export default createEngine;
