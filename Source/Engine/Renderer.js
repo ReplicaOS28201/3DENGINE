@@ -7,20 +7,6 @@ export default class Renderer {
   }
 
   render(scene, camera) {
-    if (!scene || !Array.isArray(scene.entities) || !Array.isArray(scene.lights)) {
-      throw new EngineError("render expected a valid scene", {
-        context: "Renderer",
-        code: "RENDER_SCENE_INVALID",
-      });
-    }
-
-    if (!camera || typeof camera.toJSON !== "function") {
-      throw new EngineError("render expected a camera with toJSON()", {
-        context: "Renderer",
-        code: "RENDER_CAMERA_INVALID",
-      });
-    }
-
     this.frame += 1;
     return {
       frame: this.frame,

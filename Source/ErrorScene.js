@@ -1,5 +1,8 @@
-import { createErrorPayload } from "./Core/View/ErrorHandler.js";
+import errorHandler from "./Core/View/ErrorHandler.js";
 
 export default function errorScene(error) {
-  return createErrorPayload(error, "Scene");
+  return {
+    status: "error",
+    message: errorHandler(error, "Scene"),
+  };
 }
