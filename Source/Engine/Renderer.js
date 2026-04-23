@@ -1,3 +1,5 @@
+import { EngineError } from "../Core/View/ErrorHandler.js";
+
 export default class Renderer {
   constructor(viewport) {
     this.viewport = viewport;
