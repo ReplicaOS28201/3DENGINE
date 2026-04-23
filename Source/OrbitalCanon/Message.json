@@ -1,1 +1,4 @@
-{"message":"{userwho} orbitated {userfrom}"}
+{{
+  "type": "orbit_event",
+  "message": "{userwho} orbited {userfrom}"
+}
