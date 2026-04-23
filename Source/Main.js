@@ -1,3 +1,4 @@
+
 import Engine from "./Engine/Engine.js";
 import Entity from "./Engine/Entity.js";
 import Material from "./Engine/Material.js";
@@ -15,5 +16,3 @@ export {
   Mesh,
   Light,
 };
-
-export default createEngine;
